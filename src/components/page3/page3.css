@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+.page3 {
+  height: 100%;
+  width: 100vw;
+  min-width: 350px;
+}
+.page3 .title {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 0 100px;
+  font-family: "Libre Baskerville", serif;
+}
+.page3 .title a {
+  color: #0057ba;
+  text-decoration: none;
+  font-weight: 900;
+  position: relative;
+  min-width: 65px;
+}
+.page3 .title a .arrow {
+  border-bottom: 2px solid#0057ba;
+  border-right: 2px solid #0057ba;
+  position: absolute;
+  top: 6px;
+  right: -20px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg) translateY(-50%);
+  transform-origin: right;
+}
+.page3 .cards-container {
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.page3 .cards {
+  width: 1290px;
+  row-gap: 50px;
+  column-gap: 30px;
+  justify-items: center;
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 0px;
+  grid-template-areas:
+      ". . . ."
+      ". . . .";
+  margin: auto;
+}
+
+.page3 .card {
+  height: 430px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(240, 244, 251, 1) 100%
+  );
+  border-radius: 10px;
+  border: 2px solid #f5f6f5;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.page3 .card .tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.page3 .card .tags img {
+  margin: 2px;
+}
+.page3 .card .prodPhoto {
+  position: absolute;
+  top: 20px;
+}
+.page3 .card .prodName {
+  color: black;
+  width: 250px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  bottom: 70px;
+}
+.page3 .card .score {
+  position: absolute;
+  bottom: 40px;
+}
+.page3 .card .checked {
+  color: orange;
+}
+.page3 .card a {
+  color: #0057ba;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+}
+@media (max-width: 1400px) {
+  .page3 .cards {
+    width: 950px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+  }
+}
+@media (max-width: 1000px) {
+  .page3 .cards {
+    width: 650px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 0px;
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
+  .page3 .title h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .page3 .title h1 {
+    width: 350px;
+  }
+}
+@media (max-width: 700px) {
+  .page3 .title h1 {
+    width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .page3 .title {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .page3 .title h1 {
+    text-align: center;
+  }
+}
+@media (max-height:600px) {
+  .page3 .title {
+    min-height: 130px;
+  }
+}
+@media (max-width: 650px) {
+  .page3 .cards {
+    width: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 0px;
+    grid-template-areas:
+      "."
+      ".";
+  }
+}

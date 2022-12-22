@@ -1,0 +1,114 @@
+.footer {
+  height: 40vh;
+  min-width: 350px;
+  background-color: #393d3f;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  width: 100vw;
+  color: white;
+}
+.footer .logo {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+.footer .firstContainer {
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer .secondContainer {
+  position: absolute;
+  top: 120px;
+  left: 800px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer .thirdContainer {
+  position: absolute;
+  top: 120px;
+  right: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .thirdContainer .icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+.footer .banner {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: #316bcd;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+@media (max-width: 1300px) {
+  .footer .firstContainer {
+    left: 350px;
+  }
+  .footer .secondContainer {
+    left: 550px;
+  }
+}
+@media (max-width: 1000px) {
+  .footer {
+    padding-top: 30px;
+    height: 100%;
+    gap: 30px;
+  }
+
+  .footer .logo {
+    position: static;
+    text-align: center;
+  }
+  .footer .firstContainer {
+    position: static;
+    text-align: center;
+    align-items: center;
+  }
+  .footer .secondContainer {
+    position: static;
+    text-align: center;
+    align-items: center;
+  }
+  .footer .thirdContainer {
+    position: static;
+    text-align: center;
+    align-items: center;
+  }
+  .footer .banner {
+    position: static;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+  }
+  .footer .banner h1 {
+    width: 350px;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

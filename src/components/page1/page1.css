@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+.page1 {
+  background-image: url("../../assets/page1.png");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80%;
+  font-family: "Lato", sans-serif;
+  min-width: 350px;
+  min-height: 900px;
+}
+.page1-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 90%;
+  padding-top: 150px;
+  gap: 100px;
+}
+.page1 .title {
+  color: #393d3f;
+  font-size: 2.3rem;
+  margin-left: 100px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.page1-content .title .subtitle {
+  font-size: 26px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.page1 button {
+  width: 170px;
+  height: 55px;
+  min-height: 45px;
+  border-radius: 12px;
+  color: white;
+  border: none;
+  background-color: #3066be;
+  font-family: "Lato", sans-serif;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.page1 .banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0 20px 20px 0;
+  background-color: hsla(0, 0%, 100%, 0.637);
+  height: 100px;
+  width: 70%;
+  color: #393d3f;
+  padding-left: 25px;
+}
+
+@media (max-width: 1500px) {
+  .page1-content{gap: 15px;}
+  .page1 .title {
+    width: 700px;
+  }
+
+  .page1-content .title .subtitle {
+    width: 600px;
+  }
+}
+@media (max-width: 1250px) {
+  .page1 .title {
+    width: 500px;
+    font-size: 1.6rem;
+  }
+
+  .page1-content .title .subtitle {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .page1 .title {
+    font-size: 1.6rem;
+  }
+
+  .page1-content .title .subtitle {
+    width: 300px;
+  }
+  .page1 .banner {
+    font-size: 0.8rem;
+  }
+  .page1 .banner img {
+    height: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page1 .title {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+}
+@media (max-width: 800px) {
+  .page1 .banner {
+    width: 100%;
+    font-size: 0.7rem;
+    border-radius: 0 0 0 0;
+  }
+  .page1 .banner img {
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page1-content{padding-top: 100px;gap: 100px;}
+  .page1 .title {
+    margin-left: 50px;
+    font-size: 1.4rem;
+    width: 400px;
+    margin: auto;
+  }
+  .page1 button{
+    margin: auto;
+    height: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .page1 .banner {
+    width: 100%;
+    font-size: 0.6rem;
+    padding-right: 25px;
+  }
+  .page1 .banner img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page1 .title {
+    font-size: 1.4rem;
+    width: 300px;
+  }
+  .page1 .page1-content
+  {
+    padding-top: 70px;
+  }
+}

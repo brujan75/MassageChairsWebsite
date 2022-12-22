@@ -1,0 +1,111 @@
+.page8 {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  min-width: 350px;
+}
+.page8 .title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 0 100px;
+  font-family: "Libre Baskerville", serif;
+  min-height: 130px;
+}
+.page8 .page8-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.page8 .page8-container .table {
+  width: 1200px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.page8 .page8-container .table .table-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page8 .page8-container .table .table-selector .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+  height: 90px;
+}
+.page8 .page8-container .table .table-selector .button1 {
+  border-bottom: 2px solid #3a3e401a;
+  border-right: 2px solid#3a3e401a;
+}
+.page8 .page8-container .table .table-selector .button2 {
+  border-bottom: 2px solid #3a3e401a;
+  border-right: 2px solid #3a3e401a;
+  background-color: #eaf0fa;
+}
+.page8 .page8-container .table .table-selector .button3 {
+  border-bottom: 2px solid #3a3e401a;
+  border-right: 2px solid #3a3e401a;
+}
+.page8 .page8-container .table .table-selector .button4 {
+  border-bottom: 2px solid #3a3e401a;
+}
+.page8 .page8-container .table .table-selector-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  padding: 25px;
+}
+
+@media (max-width: 1200px) {
+  .page8 .page8-container .table .table-selector .button {
+    gap: 5px;
+    min-width: 230px;
+  }
+}
+@media (max-width: 1060px) {
+  .page8 .page8-container .table .table-selector .button {
+    text-align: center;
+    min-width: 130px;
+    padding: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .page8 .page8-container .table .table-selector {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
+  .page8 .page8-container .table .table-selector-content {
+    height: 100%;
+  }
+  .page8 .page8-container .table .table-selector .button2 {
+    border-radius: 0 20px 0 0;
+    border-right: none;
+  }
+}
+@media (max-width: 700px) {
+  .page8 .title {
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 530px) {
+  .page8 .page8-container .table .table-selector .button {
+    padding-left: 20;
+  }
+  .page8 .page8-container .table .table-selector .button h2 {
+    font-size: 1.2rem;
+  }
+}

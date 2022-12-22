@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+.page6 {
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(233, 240, 250, 1) 100%
+  );
+  min-width: 350px;
+}
+
+.page6 .title {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 0 100px;
+  font-family: "Libre Baskerville", serif;
+}
+.page6 .title a {
+  color: #0057ba;
+  text-decoration: none;
+  font-weight: 900;
+  position: relative;
+}
+.page6 .title a .arrow {
+  border-bottom: 2px solid#0057ba;
+  border-right: 2px solid #0057ba;
+  position: absolute;
+  top: 6px;
+  right: -20px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg) translateY(-50%);
+  transform-origin: right;
+}
+.page6 .cards-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.page6 .cards-container .cards {
+  width: 1200px;
+  justify-items: center;
+  align-items: stretch;
+  display: grid;
+  gap: 20px 0px;
+  margin: auto;
+  margin-bottom: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+}
+.page6 .cards-container .cards .card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  border-radius: 26px;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+
+.page6 .cards-container .cards .card .person {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Lato", sans-serif;
+  width: 250px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+.page6 .cards-container .cards .card .person img {
+  margin-right: 10px;
+}
+.page6 .cards-container .cards .card .review {
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+}
+.page6 .cards-container .cards .card .review h4 {
+  margin-top: 20px;
+  width: 80%;
+}
+.page6 .cards-container .cards .card .score {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+.page6 .checked {
+  color: orange;
+}
+
+@media (max-width: 1100px) {
+  .page6 .cards-container .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      ". ."
+      ". .";
+    width: 80%;
+    column-gap: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 900px) {
+  .page6 .cards-container .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "."
+      ".";
+    width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .page6 .title h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 630px) {
+  .page6 .title {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 20px 10px;
+  }
+}
+@media (max-height:600px) {
+  .page6 .title {
+    min-height: 150px;
+  }
+}

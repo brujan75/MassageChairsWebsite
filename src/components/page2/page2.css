@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+.page2 {
+  height: 100%;
+  width: 100vw;
+  min-width: 350px;
+}
+
+.page2 .content {
+  background-color: rgb(243, 243, 243);
+  height: 40%;
+  /* min-height:1000px; */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Libre Baskerville", serif;
+  min-width: 350px;
+}
+.page2 .cards-container {
+  display: flex;
+}
+.page2 .cards {
+  z-index: 1;
+  position: relative;
+  top: -50px;
+}
+.page2 .card3 {
+  margin-right: 50px;
+}
+.page2 .content .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  color: #393D3F;
+}
+.page2 .info h1 {
+  font-size: 3.5rem;
+}
+.page2 .info p1 {
+  margin-top: 30px;
+}
+
+.page2 .video {
+  height: 600px;
+  width: 100%;
+  background-color: #c3c4bf;
+  background-image: url(../../assets/page2video.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 350px;
+}
+@media (max-width: 1600px) {
+  .page2 .cards img {
+    width: 250px;
+  }
+}
+ 
+@media (max-width: 1300px) {
+  .page2 .cards img {
+    width: 200px;
+  }
+  .page2 .content {
+    height: 35%;
+  }
+  .page2 .content .info {
+    margin: 10px 0 50px 70px;
+  }
+  .page2 .content .info h1 {
+    font-size: 3rem;
+  }
+  .page2 .content .info p1 {
+    font-size: 1rem;
+  }
+  .page2 .video {
+    height: 650px;
+  }
+}
+@media (max-width: 1100px) {
+  .page2 .content {
+    flex-direction: column;
+    gap: 0px;
+    height: 500px;
+  }
+  .page2 .content .info {
+    margin: 0;
+    padding: 0px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page2 .video {
+    height: 500px;
+  }
+  .page2 .cards {top:0;}
+  .page2 .card3 {
+    margin-right: 0px;
+  }
+}
+
+@media (max-height: 800px) {
+  .page2 .content {
+    min-height: 400px;
+  }
+ 
+}
+
+@media (max-width: 650px) {
+  .page2 .cards img {
+    width: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .page2 .cards img {
+    width: 130px;
+  }
+  .page2 .content .info h1 {
+    font-size: 3rem;
+    margin: 1px;
+  }
+}
+@media (max-width: 400px) {
+  .page2 .cards img {
+    width: 100px;
+  }
+}

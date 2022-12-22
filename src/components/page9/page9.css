@@ -1,0 +1,191 @@
+.page9 {
+  height: 900px;
+  width: 100vw;
+  min-width: 350px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+  background-image: url("../../assets/contactBg.png");
+  background-repeat: no-repeat;
+  background-position: 20%;
+}
+.page9 .banner {
+  position: absolute;
+  width: 900px;
+  color: #fff;
+  height: 150px;
+  background-color: #316bcd;
+  border-radius: 0 20px 20px 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 100px;
+  min-width: 300px;
+}
+
+.page9 .banner h1 {
+  font-family: "Libre Baskerville", serif;
+}
+.page9 .banner h2 {
+  font-family: "Lato", sans-serif;
+}
+.page9 .contactSection {
+  position: absolute;
+  width: 800px;
+  height: 700px;
+  border: 2px solid #c1d3f0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  right: 100px;
+}
+.page9 .contactSection form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+.page9 .contactSection form .upper-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 75%;
+  font-family: "Lato", sans-serif;
+  gap: 30px;
+}
+.page9 .contactSection form .upper-section div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.page9 .contactSection form .upper-section div input {
+  height: 50px;
+  width: 100%;
+}
+.page9 .contactSection form .upper-section label {
+  font-weight: 900;
+}
+.page9 .contactSection form .upper-section input {
+  border: 2px solid #7c7f81;
+  border-radius: 8px;
+  height: 40px;
+  width: 700px;
+  padding-left: 10px;
+}
+.page9 .contactSection form .upper-section div textarea {
+  border: 2px solid #7c7f81;
+  border-radius: 8px;
+  height: 100px;
+  width: 700px;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+.page9 .contactSection form .lower-section {
+  position: relative;
+  width: 100%;
+  height: 25%;
+}
+.page9 .contactSection form .lower-section checkbox {
+  position: absolute;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.page9 .contactSection form .lower-section checkbox input {
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.page9 .contactSection form .lower-section .info {
+  position: absolute;
+  bottom: 50px;
+  color: #9e9f9f;
+}
+.page9 .contactSection form .lower-section .button {
+  background: #316bcd;
+  color: white;
+  border: none;
+  position: absolute;
+  bottom: 35px;
+  right: 0px;
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  font-size: 24px;
+}
+
+@media (max-width: 1850px) {
+  .page9 .banner {
+    width: 40%;
+  }
+}
+@media (max-width: 1550px) {
+  .page9 .banner {
+    width: 30%;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1300px) {
+  .page9 {
+    flex-direction: column;
+  }
+  .page9 .contactSection {
+    position: relative;
+    margin-left: 150px;
+  }
+  .page9 .banner {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+  }
+  .page9 .banner {
+    align-items: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .page9 .contactSection {
+    width: 600px;
+  }
+  .page9 .contactSection form .upper-section div textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .page9 .contactSection {
+    width: 450px;
+  }
+  .page9 .contactSection form .lower-section .button {
+    bottom: 0;
+    right:70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page9 .contactSection {
+    width: 300px;
+  }
+  .page9 .banner {
+    margin-right: 50px;
+  }
+  .page9 .contactSection form .lower-section .button {
+    bottom: 0;
+    right:0px;
+  }
+}

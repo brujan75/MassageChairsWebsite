@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+.page5 {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 350px;
+}
+.page5 .photo {
+  width: 50%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+.page5 .photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page5 .banner {
+  width: 50%;
+  min-height: 500px;
+  height: 65vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(205, 205, 201, 1) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: #393d3f;
+  padding: 150px;
+  font-size: 1.2rem;
+}
+.page5 .banner .banner-content {
+  width: 600px;
+}
+.page5 .banner h1 {
+  font-family: "Libre Baskerville", serif;
+}
+.page5 .banner p1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin: 40px 0 20px 0;
+}
+.page5 .banner h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+
+@media (max-width: 1400px) {
+  .page5 .banner {
+    padding: 130px;
+  }
+  .page5 .banner h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .page5 .banner {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page5 {
+    flex-direction: column;
+  }
+  .page5 .banner {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(205, 205, 201, 1) 100%
+    );
+    width: 100%;
+  }
+  .page5 .photo {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .page5 .banner {
+    text-align: center;
+    margin: auto;
+    padding: 0 30px;
+  }
+
+  .page5 .banner h1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
