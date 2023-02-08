@@ -15,14 +15,14 @@ const Navbar = () => {
           <h2>CALL NOW</h2>
           <h2 className="nr">
             <img src={`https://file.rendit.io/n/9aYpwiOT1Tv78owUF3wS.svg`} />
-            <>+44 7391 0235 75</>
+            <>+407 12 123 123</>
           </h2>
         </div>
         <div className="navbarContact-right">
           <img src={`https://file.rendit.io/n/g8lITgz4M3ubHpWHVPxn.svg`} />
           <p1>Mon-Sat 08:00 - 18:00</p1>
           <img src={`https://file.rendit.io/n/BueyfwmlGXmqFk1csi1M.svg`} />
-          <p1>cs@fujiiryoki.uk</p1>
+          <p1>address@y.com</p1>
         </div>
       </contact>
       <header>
